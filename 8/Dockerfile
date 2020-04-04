@@ -20,5 +20,4 @@ RUN dnf update -y && \
     yum clean all && \
     rm -rf /var/cache/yum 
 
-COPY user_entrypoint.sh /usr/local/bin/user_entrypoint.sh
-ENTRYPOINT ["/usr/local/bin/user_entrypoint.sh"]
+WORKDIR /home
