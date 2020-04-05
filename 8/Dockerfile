@@ -11,6 +11,7 @@ MAINTAINER Ian Merrick <MerrickI@Cardiff.ac.uk>
 RUN dnf update -y && \ 
     dnf install -y epel-release && \
     dnf install -y ansible \
+                   bzip2   \
                    git     \
                    gcc     \
                    gcc-c++ \ 
